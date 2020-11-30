@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="user" class="fsc.domain.User">
+    <property name="id" value="1"/>
+    <property name="name" value="isjinhao"/>
+    <property name="city" value="HANGZHOU"/>
+    <property name="workCities" value="BEIJING,HANGZHOU"/>
+    <property name="lifeCities">
+      <list>
+        <value>BEIJING</value>
+        <value>SHANGHAI</value>
+      </list>
+    </property>
+    <property name="configFileLocation" value="classpath:/META-INF/user-config.properties"/>
+  </bean>
+
+  <!-- 不加primary="true"在按类型查找时会报错，因为SuperUser也是User类型，加上primary="true"后Spring就知道同类型有多个时寻找这个 -->
+  <bean id="superUser" class="fsc.domain.SuperUser" parent="user" primary="true">
+    <property name="address" value="深圳"/>
+  </bean>
+
+  <bean id="objectFactoryUser" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+    <property name="targetBeanName" value="user"/>
+  </bean>
+
+</beans>
