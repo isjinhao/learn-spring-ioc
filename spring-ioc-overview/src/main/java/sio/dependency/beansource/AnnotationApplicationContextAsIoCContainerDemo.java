@@ -21,7 +21,11 @@ public class AnnotationApplicationContextAsIoCContainerDemo {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         // 将当前类 AnnotationApplicationContextAsIoCContainerDemo 作为配置类
 //        applicationContext.register(AnnotationApplicationContextAsIoCContainerDemo.class);
-        applicationContext.scan("ico.dependency.beansource");
+
+        /**
+         * scan() 需要和@Configuration共同使用
+         */
+        applicationContext.scan("sio.dependency.beansource");
         // 启动应用上下文
         applicationContext.refresh();
         // 依赖查找集合对象
@@ -29,7 +33,6 @@ public class AnnotationApplicationContextAsIoCContainerDemo {
 
         // 关闭应用上下文
         applicationContext.close();
-
     }
 
     /**
