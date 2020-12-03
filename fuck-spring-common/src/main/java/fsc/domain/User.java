@@ -3,29 +3,41 @@ package fsc.domain;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.core.io.Resource;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.List;
 
 /**
- * @Author ISJINHAO
- * @Date 2020/11/29 12:39
- */
-    @Setter
-    @Getter
-    @ToString
-    public class User {
+* @Author ISJINHAO
+* @Date 2020/11/29 12:39
+*/
+@Setter
+@Getter
+@ToString
+public class User {
 
-        private Long id;
+    private Long id;
 
-        private String name;
+    private String name;
 
-        private City city;
+    private City city;
 
-        private City[] workCities;
+    private City[] workCities;
 
-        private List<City> lifeCities;
+    private List<City> lifeCities;
 
-        private Resource configFileLocation;
+    private Resource configFileLocation;
 
+    public User(Long id, String name, City city) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
     }
+
+    public User() {
+    }
+
+}

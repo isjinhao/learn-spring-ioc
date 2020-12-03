@@ -12,6 +12,7 @@
         <module>spring-ioc-overview</module>
         <module>fuck-spring-common</module>
         <module>spring-event</module>
+        <module>spring-bean</module>
     </modules>
 
     <packaging>pom</packaging>
