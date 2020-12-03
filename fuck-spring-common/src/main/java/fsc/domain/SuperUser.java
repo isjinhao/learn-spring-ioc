@@ -1,9 +1,13 @@
 package fsc.domain;
 
-import fsc.domain.SuperUserAnnotation;
-import fsc.domain.User;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @SuperUserAnnotation
+@Setter
+@Getter
+@ToString
 public class SuperUser extends User {
 
     private String address;
@@ -12,14 +16,4 @@ public class SuperUser extends User {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    @Override
-    public String toString() {
-        return "SuperUser{" +
-                "address='" + address + '\'' +
-                "} " + super.toString();
-    }
 }

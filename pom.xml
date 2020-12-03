@@ -12,7 +12,7 @@
         <module>spring-ioc-overview</module>
         <module>fuck-spring-common</module>
         <module>spring-event</module>
-        <module>spring-bean</module>
+        <module>beanfactory-bean</module>
     </modules>
 
     <packaging>pom</packaging>
