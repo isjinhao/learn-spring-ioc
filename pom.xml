@@ -13,6 +13,7 @@
         <module>fuck-spring-common</module>
         <module>spring-event</module>
         <module>beanfactory-bean</module>
+        <module>applicationcontext-bean</module>
     </modules>
 
     <packaging>pom</packaging>

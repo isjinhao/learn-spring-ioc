@@ -3,11 +3,8 @@ package fsc.domain;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.beans.factory.DisposableBean;
 import org.springframework.core.io.Resource;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.util.List;
 
 /**

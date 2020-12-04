@@ -1,8 +1,7 @@
-package bb.gc;
+package bb.other.gc;
 
 import fsc.domain.User;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import bb.initialization.BeanInitializationDemo;
 
 /**
  * @author 01395265
@@ -14,7 +13,7 @@ public class BeanGarbageCollectionDemo {
 
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
 
-        applicationContext.register(BeanInitializationDemo.class);
+//        applicationContext.register(BeanInitializationDemo.class);
 
         applicationContext.refresh();
 
