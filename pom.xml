@@ -14,6 +14,8 @@
         <module>spring-event</module>
         <module>beanfactory-bean</module>
         <module>applicationcontext-bean</module>
+        <module>externalized-configuration</module>
+        <module>bean-scope</module>
     </modules>
 
     <packaging>pom</packaging>

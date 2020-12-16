@@ -5,7 +5,7 @@ package bb.lifecycle;
  * @description TODO
  * @date 2020/12/3
  */
-public class BeanFactoryDomainExtended extends BeanFactoryDomain{
+public class BeanFactoryDomainExtended extends BeanFactoryDomain {
 
     public BeanFactoryDomainExtended(Integer age, String name) {
         super(age, name);

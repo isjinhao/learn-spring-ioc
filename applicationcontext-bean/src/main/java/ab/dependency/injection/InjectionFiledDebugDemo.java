@@ -1,24 +1,28 @@
 package ab.dependency.injection;
 
-import ab.holder.InjectionDebugDomain;
 import ab.holder.UserHolder;
-import fsc.domain.City;
 import fsc.domain.User;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Import;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * @Author ISJINHAO
  * @Date 2020/12/6 15:42
  */
-public class InjectionDebugDemo {
+@Import(InjectionMethodDebugDemo.class)
+public class InjectionFiledDebugDemo {
+
+    @Value(value = "")
+    private String aaa;
 
     @Autowired
     private User user;
@@ -36,37 +40,28 @@ public class InjectionDebugDemo {
     @Autowired
     private ObjectProvider<UserHolder> userHolderObjectProvider;
 
-    private User userInjectedByMethod;
-
-    @Lazy
     @Autowired
-    private void init(User user, User user2) {
-        this.userInjectedByMethod = user;
-    }
+    private Optional<User> userOptional;
 
     public static void main(String[] args) {
 
         AnnotationConfigApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext();
 
-        applicationContext.register(InjectionDebugDemo.class);
+        applicationContext.register(InjectionFiledDebugDemo.class);
 
         applicationContext.refresh();
 
-        InjectionDebugDemo demo = applicationContext.getBean(InjectionDebugDemo.class);
+        InjectionFiledDebugDemo demo = applicationContext.getBean(InjectionFiledDebugDemo.class);
 
         System.out.println(demo.user);
         System.out.println(demo.userHolder);
         System.out.println(demo.userHolderList);
         System.out.println(demo.userHolderMap);
         demo.userHolderObjectProvider.stream().forEach(System.out::println);
+        System.out.println(demo.userOptional);
         applicationContext.close();
 
-    }
-
-    @Bean
-    public User user() {
-        return new User(888L, "jinhao", City.SHENZHEN);
     }
 
     @Bean
@@ -82,6 +77,5 @@ public class InjectionDebugDemo {
         userHolder.setId("userHolder2");
         return userHolder;
     }
-
 
 }

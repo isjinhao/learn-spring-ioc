@@ -16,11 +16,19 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * @Author ISJINHAO
+ * @Date 2020/12/15 19:06
+ */
 public class ApiCustomizeAnnotationDemo {
 
     @InjectedUser
     private User myInjectedUser;
 
+    /**
+     * static方法会将Bean的实例化提前触发。
+     * 如果static去掉，myInjectedUser就会是空
+     */
     @Bean(name = AnnotationConfigUtils.AUTOWIRED_ANNOTATION_PROCESSOR_BEAN_NAME)
     public static AutowiredAnnotationBeanPostProcessor beanPostProcessor() {
         AutowiredAnnotationBeanPostProcessor beanPostProcessor = new AutowiredAnnotationBeanPostProcessor();

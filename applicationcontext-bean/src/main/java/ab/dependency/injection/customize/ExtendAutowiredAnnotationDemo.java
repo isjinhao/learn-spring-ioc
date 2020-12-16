@@ -6,10 +6,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.Optional;
 
+/**
+ * @Author ISJINHAO
+ * @Date 2020/12/14 15:17
+ */
 public class ExtendAutowiredAnnotationDemo {
 
     @MyAutowired
-    private Optional<User> userOptional; // superUser
+    private Optional<User> userOptional;
 
     public static void main(String[] args) {
 

@@ -22,7 +22,12 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.EmbeddedValueResolverAware;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.core.env.Environment;
+import org.springframework.core.env.StandardEnvironment;
+import org.springframework.util.StringValueResolver;
 
 /**
  * 基于 {@link Aware} 接口回调的依赖注入示例
@@ -30,11 +35,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @since
  */
-public class AwareInterfaceDependencyInjectionDemo implements BeanFactoryAware, ApplicationContextAware {
+public class AwareInterfaceDependencyInjectionDemo implements BeanFactoryAware, ApplicationContextAware, EmbeddedValueResolverAware, EnvironmentAware {
 
     private static BeanFactory beanFactory;
 
     private static ApplicationContext applicationContext;
+
+    private static StringValueResolver stringValueResolver;
+
+    private static StandardEnvironment environment;
 
     public static void main(String[] args) {
 
@@ -48,6 +57,8 @@ public class AwareInterfaceDependencyInjectionDemo implements BeanFactoryAware, 
 
         System.out.println(beanFactory == context.getBeanFactory());
         System.out.println(applicationContext == context);
+        System.out.println(environment.resolvePlaceholders("123"));
+        System.out.println(stringValueResolver.resolveStringValue("123"));
 
         // 显示地关闭 Spring 应用上下文
         context.close();
@@ -62,4 +73,16 @@ public class AwareInterfaceDependencyInjectionDemo implements BeanFactoryAware, 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         AwareInterfaceDependencyInjectionDemo.applicationContext = applicationContext;
     }
+
+
+    @Override
+    public void setEmbeddedValueResolver(StringValueResolver resolver) {
+        AwareInterfaceDependencyInjectionDemo.stringValueResolver = resolver;
+    }
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        AwareInterfaceDependencyInjectionDemo.environment = (StandardEnvironment) environment;
+    }
+
 }
