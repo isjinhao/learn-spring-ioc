@@ -4,6 +4,10 @@ import sio.repository.UserRepository;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * @Author ISJINHAO
+ * @Date 2020/12/5 15:48
+ */
 public class DependencyInjectionDemo {
 
     public static void main(String[] args) {

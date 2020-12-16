@@ -13,6 +13,9 @@
         <module>fuck-spring-common</module>
         <module>spring-event</module>
         <module>beanfactory-bean</module>
+        <module>applicationcontext-bean</module>
+        <module>externalized-configuration</module>
+        <module>bean-scope</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -38,6 +41,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

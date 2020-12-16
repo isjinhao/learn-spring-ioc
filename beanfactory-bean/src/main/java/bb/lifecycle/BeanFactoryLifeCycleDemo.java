@@ -80,8 +80,6 @@ public class BeanFactoryLifeCycleDemo {
         beanFactory.getBean("create-by-factory-bean");
         beanFactory.destroySingleton("create-by-factory-bean");
         System.out.println("----------------------------------");
-        beanFactory.getBean("child-bean");
-        beanFactory.destroySingleton("child-bean");
 
     }
 

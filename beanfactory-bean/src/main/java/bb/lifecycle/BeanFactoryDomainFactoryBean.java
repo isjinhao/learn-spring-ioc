@@ -3,8 +3,8 @@ package bb.lifecycle;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
- * @author 01395265
- * @date 2020/12/3
+ * @Author ISJINHAO
+ * @Date 2020/12/15 21:08
  */
 public class BeanFactoryDomainFactoryBean implements FactoryBean<BeanFactoryDomain> {
     @Override
