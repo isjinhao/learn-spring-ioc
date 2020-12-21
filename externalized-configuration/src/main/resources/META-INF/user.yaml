@@ -1,0 +1,7 @@
+yaml: true
+user:
+  id: 88888
+  localName: aha
+  city: SHENZHEN
+  workCities: BEIJING, HANGZHOU
+  configFileLocation: classpath:META-INF/user.properties
