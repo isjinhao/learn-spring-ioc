@@ -16,6 +16,8 @@
         <module>applicationcontext-bean</module>
         <module>externalized-configuration</module>
         <module>bean-scope</module>
+        <module>resource-abstraction</module>
+        <module>data-operation</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -23,6 +25,8 @@
     <properties>
         <spring-version>5.2.2.RELEASE</spring-version>
         <lombok-version>1.18.16</lombok-version>
+        <snakeyaml-version>1.27</snakeyaml-version>
+        <commons-io-version>2.8.0</commons-io-version>
     </properties>
 
     <dependencyManagement>
@@ -47,6 +51,17 @@
                 <artifactId>javax.inject</artifactId>
                 <version>1</version>
             </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io-version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
