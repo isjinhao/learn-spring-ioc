@@ -10,7 +10,7 @@ import java.util.Date;
  * @description TODO
  * @date 2020/12/21
  */
-public class MessageFormatDemoFromJDK {
+public class MessageFormatInJDK {
 
     public static void main(String[] args) {
 
@@ -23,8 +23,7 @@ public class MessageFormatDemoFromJDK {
             planet, new Date(), event);
         System.out.println(result);
 
-
-        // 输出fileCount引号
+        // 输出引号
         int fileCount = 1273;
         String diskName = "MyDisk";
         Object[] testArgs = {new Long(fileCount), diskName};
@@ -41,11 +40,11 @@ public class MessageFormatDemoFromJDK {
 
         // 小数的输出
         MessageFormat mf = new MessageFormat("{0,number,#.##}, {0,number,#.###}");
-        Object[] objs = {new Double(3.1415), new Double(3.1415926)};
+        Object[] objs = {new Double(3.1415), new Double(4.1123)};
         result = mf.format(objs);
         System.out.println(result);     // "3.14, 3.1"
 
-        objs = mf.parse(result, new ParsePosition(0));
+        objs = mf.parse(result, new ParsePosition(1));
         System.out.println(objs[0]);    // {new Double(3.1)}
 
 

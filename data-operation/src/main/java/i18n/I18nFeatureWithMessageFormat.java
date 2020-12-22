@@ -28,7 +28,7 @@ import java.util.Locale;
  * @see MessageFormat
  * @since
  */
-public class MessageFormatDemo {
+public class I18nFeatureWithMessageFormat {
 
     public static void main(String[] args) {
 
