@@ -1,4 +1,4 @@
-package ra;
+package resource;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.DefaultResourceLoader;
@@ -23,11 +23,11 @@ import java.nio.charset.Charset;
  */
 public class EncodedFileSystemResourceLoaderDemo {
 
-    private static String classpathFileLocation = "ra\\EncodedFileSystemResourceLoaderDemo";
+    private static String classpathFileLocation = "resource\\EncodedFileSystemResourceLoaderDemo";
 
     public static void main(String[] args) throws IOException {
         String currentJavaFilePath = "/" + System.getProperty("user.dir") +
-                "\\resource-abstraction\\src\\main\\java\\" + classpathFileLocation + ".java";
+                "\\spring-infrastructure\\src\\main\\java\\" + classpathFileLocation + ".java";
         FileSystemResourceLoader fsResourceLoader = new FileSystemResourceLoader();
         Resource resource = fsResourceLoader.getResource(currentJavaFilePath);
         EncodedResource encodedResource = new EncodedResource(resource, "UTF-8");

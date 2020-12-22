@@ -1,4 +1,4 @@
-package ra;
+package resource;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -18,10 +18,10 @@ import java.util.stream.Stream;
  */
 public class InjectingResourceDemo {
 
-    @Value("classpath:/META-INF/default.properties")
+    @Value("classpath:/META-INF/resource/default.properties")
     private Resource defaultPropertiesResource;
 
-    @Value("classpath*:/META-INF/*.properties")
+    @Value("classpath*:/META-INF/**/*.properties")
     private Resource[] propertiesResources;
 
     @Value("${user.dir}")

@@ -15,9 +15,8 @@
         <module>beanfactory-bean</module>
         <module>applicationcontext-bean</module>
         <module>externalized-configuration</module>
-        <module>bean-scope</module>
-        <module>resource-abstraction</module>
         <module>data-operation</module>
+        <module>spring-infrastructure</module>
     </modules>
 
     <packaging>pom</packaging>

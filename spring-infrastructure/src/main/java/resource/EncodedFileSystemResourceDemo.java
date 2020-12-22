@@ -1,4 +1,4 @@
-package ra;
+package resource;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.FileSystemResource;
@@ -14,7 +14,7 @@ public class EncodedFileSystemResourceDemo {
 
     public static void main(String[] args) throws Exception {
 
-        String currentJavaFilePath = System.getProperty("user.dir") + "\\resource-abstraction\\src\\main\\java\\ra\\EncodedFileSystemResourceLoaderDemo.java";
+        String currentJavaFilePath = System.getProperty("user.dir") + "\\spring-infrastructure\\src\\main\\java\\resource\\EncodedFileSystemResourceLoaderDemo.java";
         System.out.println(currentJavaFilePath);
         // FileSystemResource => WritableResource => Resource
         FileSystemResource fileSystemResource = new FileSystemResource(currentJavaFilePath);
