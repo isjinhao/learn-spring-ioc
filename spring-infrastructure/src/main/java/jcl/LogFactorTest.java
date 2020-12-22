@@ -1,4 +1,4 @@
-package fsje.jcl;
+package jcl;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

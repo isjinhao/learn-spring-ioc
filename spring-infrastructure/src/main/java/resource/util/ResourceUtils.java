@@ -1,4 +1,4 @@
-package resource;
+package resource.util;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.Resource;

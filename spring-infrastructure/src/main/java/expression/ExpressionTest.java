@@ -1,4 +1,4 @@
-package fsje.expression;
+package expression;
 
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;

@@ -1,4 +1,4 @@
-package resource;
+package resource.pathmatching;
 
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;

@@ -6,6 +6,7 @@ import org.springframework.core.io.Resource;
 
 import javax.annotation.PostConstruct;
 import java.util.stream.Stream;
+import resource.util.ResourceUtils;
 
 /**
  * 注入 {@link Resource} 对象示例
