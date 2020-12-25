@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>isjinhao</groupId>
-    <artifactId>fuck-spring</artifactId>
+    <artifactId>learn-spring-ioc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-ioc-overview</module>
@@ -14,8 +14,9 @@
         <module>beanfactory-bean</module>
         <module>applicationcontext-bean</module>
         <module>externalized-configuration</module>
-        <module>data-operation</module>
         <module>spring-infrastructure</module>
+        <module>i18n</module>
+        <module>resource-abstraction</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -59,7 +60,11 @@
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io-version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>5.2.2.RELEASE</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
