@@ -1,6 +1,6 @@
 package bb.objectfactory;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;

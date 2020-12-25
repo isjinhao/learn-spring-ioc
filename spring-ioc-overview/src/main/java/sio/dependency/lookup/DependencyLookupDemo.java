@@ -1,8 +1,8 @@
 package sio.dependency.lookup;
 
 import org.springframework.context.ApplicationContext;
-import fsc.domain.SuperUserAnnotation;
-import fsc.domain.User;
+import sic.domain.SuperUserAnnotation;
+import sic.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;

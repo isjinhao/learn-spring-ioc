@@ -1,4 +1,4 @@
-package fsc.domain;
+package sic.domain;
 
 /**
  * @Author ISJINHAO

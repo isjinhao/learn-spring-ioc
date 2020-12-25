@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
 
-    <bean class="fsc.domain.User" id="test-user"></bean>
+    <bean class="sic.domain.User" id="test-user"></bean>
 
     <bean class="ab.order.BeanProcessorOrderedDemo.MyBeanPostProcessor1"></bean>
     <bean class="ab.order.BeanProcessorOrderedDemo.MyBeanPostProcessor2"></bean>

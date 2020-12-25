@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
 https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean class="fsc.domain.User" id="create-by-constructor">
+  <bean class="sic.domain.User" id="create-by-constructor">
     <constructor-arg name="id" value="1"/>
     <constructor-arg name="name" value="JACK MA"/>
     <constructor-arg name="city" value="HANGZHOU"/>
@@ -14,7 +14,7 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
   <bean id="create-by-static-method" class="bb.holder.UserFactory" factory-method="createUserByStaticMethod"/>
 
   <!-- 实例（Bean）方法实例化 Bean -->
-  <bean id="create-by-instance-method" class="fsc.domain.User" factory-bean="userFactory" factory-method="createUserByInstanceMethod"/>
+  <bean id="create-by-instance-method" class="sic.domain.User" factory-bean="userFactory" factory-method="createUserByInstanceMethod"/>
   <bean id="userFactory" class="bb.holder.UserFactory"/>
 
 <!--  &lt;!&ndash; FactoryBean实例化 Bean &ndash;&gt;-->

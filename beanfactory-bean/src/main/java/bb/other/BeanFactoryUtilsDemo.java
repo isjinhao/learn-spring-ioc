@@ -1,6 +1,6 @@
 package bb.other;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

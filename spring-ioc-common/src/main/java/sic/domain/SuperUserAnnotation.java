@@ -1,4 +1,4 @@
-package fsc.domain;
+package sic.domain;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

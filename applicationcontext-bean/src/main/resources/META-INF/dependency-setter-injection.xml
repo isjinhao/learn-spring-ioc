@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="fsc.domain.User" >
+    <bean id="user" class="sic.domain.User" >
         <property name="city" value="SHENZHEN" />
         <property name="name" value="isjinhao" />
         <property name="id" value="100" />

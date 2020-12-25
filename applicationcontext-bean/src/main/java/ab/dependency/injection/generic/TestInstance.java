@@ -1,7 +1,7 @@
 package ab.dependency.injection.generic;
 
 import ab.dependency.injection.group.UserGroup1;
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.lang.reflect.Field;

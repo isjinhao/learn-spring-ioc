@@ -1,7 +1,6 @@
 package ec.yaml.xml;
 
-import ec.properties.xml.XmlBeanExternalizedConfigurationDemo;
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,6 +1,6 @@
 package bb.definition.register;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 

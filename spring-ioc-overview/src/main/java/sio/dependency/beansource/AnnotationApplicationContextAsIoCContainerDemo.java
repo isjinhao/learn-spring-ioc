@@ -1,6 +1,6 @@
 package sio.dependency.beansource;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

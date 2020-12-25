@@ -1,6 +1,6 @@
 package bb.other.gc;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

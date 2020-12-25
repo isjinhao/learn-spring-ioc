@@ -1,6 +1,6 @@
 package bb.definition;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

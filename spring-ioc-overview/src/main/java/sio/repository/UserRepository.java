@@ -1,6 +1,6 @@
 package sio.repository;
 
-import fsc.domain.User;
+import sic.domain.User;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

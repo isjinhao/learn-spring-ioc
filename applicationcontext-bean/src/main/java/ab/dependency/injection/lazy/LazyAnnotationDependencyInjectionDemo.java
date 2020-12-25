@@ -16,7 +16,7 @@
  */
 package ab.dependency.injection.lazy;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;

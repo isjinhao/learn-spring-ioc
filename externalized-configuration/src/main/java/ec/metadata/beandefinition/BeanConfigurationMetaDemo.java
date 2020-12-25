@@ -1,6 +1,6 @@
 package ec.metadata.beandefinition;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanPostProcessor;

@@ -1,6 +1,6 @@
 package bb.holder;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;

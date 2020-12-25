@@ -1,6 +1,6 @@
 package ab.holder;
 
-import fsc.domain.User;
+import sic.domain.User;
 
 /**
  * @Author ISJINHAO

@@ -9,7 +9,7 @@
 
   <context:annotation-config />
   
-  <bean id="user" class="fsc.domain.User">
+  <bean id="user" class="sic.domain.User">
     <property name="id" value="${user.id}"/>
     <property name="name" value="${user.localName}"/>
     <property name="city" value="${user.city}"/>

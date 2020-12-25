@@ -1,7 +1,7 @@
 package ab.dependency.injection.filed;
 
 import ab.holder.UserHolder;
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;

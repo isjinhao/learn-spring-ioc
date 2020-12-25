@@ -1,6 +1,6 @@
 package bb.holder;
 
-import fsc.domain.User;
+import sic.domain.User;
 
 /**
  * @author 01395265

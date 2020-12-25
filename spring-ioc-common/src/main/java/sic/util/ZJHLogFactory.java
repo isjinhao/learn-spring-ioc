@@ -1,4 +1,4 @@
-package fsc.util;
+package sic.util;
 
 import org.apache.commons.logging.LogFactory;
 

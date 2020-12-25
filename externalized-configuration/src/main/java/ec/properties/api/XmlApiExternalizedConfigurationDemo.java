@@ -1,7 +1,7 @@
 package ec.properties.api;
 
-import fsc.domain.City;
-import fsc.domain.User;
+import sic.domain.City;
+import sic.domain.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

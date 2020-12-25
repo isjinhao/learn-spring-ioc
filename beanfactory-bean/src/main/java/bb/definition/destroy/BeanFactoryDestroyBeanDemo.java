@@ -1,6 +1,6 @@
 package bb.definition.destroy;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.support.*;
 import org.springframework.util.StringUtils;
 

@@ -11,7 +11,7 @@
 
   <context:property-placeholder location="classpath*:META-INF/user.yaml" file-encoding="UTF-8" />
 
-  <bean id="user" class="fsc.domain.User">
+  <bean id="user" class="sic.domain.User">
     <property name="id" value="${user.id}"/>
     <property name="name" value="${user.localName}"/>
     <property name="city" value="${user.city}"/>

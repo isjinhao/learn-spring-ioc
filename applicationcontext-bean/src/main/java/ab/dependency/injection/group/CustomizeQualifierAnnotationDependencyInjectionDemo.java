@@ -1,6 +1,6 @@
 package ab.dependency.injection.group;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

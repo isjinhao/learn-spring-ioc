@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="user" class="fsc.domain.User">
+  <bean id="user" class="sic.domain.User">
     <property name="id" value="1"/>
     <property name="name" value="isjinhao"/>
     <property name="city" value="HANGZHOU"/>
@@ -19,7 +19,7 @@
   </bean>
 
   <!-- 不加primary="true"在按类型查找时会报错，因为SuperUser也是User类型，加上primary="true"后Spring就知道同类型有多个时寻找这个 -->
-  <bean id="superUser" class="fsc.domain.SuperUser" parent="user" primary="true">
+  <bean id="superUser" class="sic.domain.SuperUser" parent="user" primary="true">
     <property name="address" value="深圳"/>
   </bean>
 

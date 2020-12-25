@@ -1,7 +1,7 @@
 package ab.dependency.knowledgepoint;
 
 import ab.holder.ACDomain;
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

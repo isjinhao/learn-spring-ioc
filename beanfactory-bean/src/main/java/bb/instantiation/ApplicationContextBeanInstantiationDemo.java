@@ -1,6 +1,6 @@
 package bb.instantiation;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Map;

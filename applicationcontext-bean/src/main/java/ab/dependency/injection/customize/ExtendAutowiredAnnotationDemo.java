@@ -1,6 +1,6 @@
 package ab.dependency.injection.customize;
 
-import fsc.domain.User;
+import sic.domain.User;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

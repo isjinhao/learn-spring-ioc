@@ -12,7 +12,7 @@ import org.springframework.core.PriorityOrdered;
  * @Author ISJINHAO
  * @Date 2020/12/5 21:10
  */
-public class BeanFactoryProcessorOrderedDemo {
+public class  BeanFactoryProcessorOrderedDemo {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext =
