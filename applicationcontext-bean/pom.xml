@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>isjinhao</groupId>
-            <artifactId>fuck-spring-common</artifactId>
+            <artifactId>spring-ioc-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

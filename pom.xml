@@ -9,14 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-ioc-overview</module>
-        <module>fuck-spring-common</module>
-        <module>spring-event</module>
+        <module>spring-ioc-common</module>
+        <module>context-event</module>
         <module>beanfactory-bean</module>
         <module>applicationcontext-bean</module>
         <module>externalized-configuration</module>
         <module>spring-infrastructure</module>
-        <module>i18n</module>
         <module>resource-abstraction</module>
+        <module>application-lifecycle</module>
     </modules>
 
     <packaging>pom</packaging>
