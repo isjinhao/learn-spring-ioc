@@ -1,20 +1,19 @@
-package ab.configuration;
+package ab.configuration.importaware;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import sic.domain.User;
 
 /**
- * @author 01395265
- * @date 2020/12/31
+ * @Author ISJINHAO
+ * @Date 2021/1/1 20:42
  */
-public class ConfigurationDemo {
+@MyConfigurationAnnotation(testValue = "2021")
+public class MyConfigurationDemo {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(MyConfiguration1.class);
+        context.register(MyConfigurationDemo.class);
         context.refresh();
-        User user = context.getBean(User.class);
-        System.out.println(user);
+        context.close();
     }
 
 }

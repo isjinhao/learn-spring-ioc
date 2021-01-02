@@ -9,13 +9,8 @@ import javax.annotation.PostConstruct;
 import java.util.stream.Stream;
 
 /**
- * 注入 {@link Resource} 对象示例
- *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @see Resource
- * @see Value
- * @see AnnotationConfigApplicationContext
- * @since
+ * @Author ISJINHAO
+ * @Date 2021/1/2 15:20
  */
 public class InjectingResourceDemo {
 

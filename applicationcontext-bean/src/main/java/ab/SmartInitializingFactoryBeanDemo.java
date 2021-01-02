@@ -18,8 +18,6 @@ public class SmartInitializingFactoryBeanDemo {
         applicationContext.refresh();
         applicationContext.close();
 
-        System.out.println(new LiveBeansView().getSnapshotAsJson());
-
     }
 
     static class MyBeanPostProcessor implements BeanPostProcessor {
